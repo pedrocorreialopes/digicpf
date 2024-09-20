@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dígito Verificador CPF e CNPJ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Dígito Verificador</h1>
+        <div class="input-section">
+            <label for="cpf">Digite o CPF (sem dígitos verificadores):</label>
+            <input type="text" id="cpf" maxlength="9" placeholder="Ex.: 123456789">
+            <button onclick="calcularCPF()">Calcular CPF</button>
+            <p id="resultado-cpf"></p>
+        </div>
+
+        <div class="input-section">
+            <label for="cnpj">Digite o CNPJ (sem dígitos verificadores):</label>
+            <input type="text" id="cnpj" maxlength="12" placeholder="Ex.: 123456780001">
+            <button onclick="calcularCNPJ()">Calcular CNPJ</button>
+            <p id="resultado-cnpj"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
